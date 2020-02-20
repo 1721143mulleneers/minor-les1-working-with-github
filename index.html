@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    padding: 200px;
+}
+
+        .face {
+            width: 500px;
+            height: 500px;
+            background: beige;
+            border: 1px solid black;
+            border-radius: 200px;
+            position: relative;
+        }
+
+        #eye1{
+            top: 140px;
+            left: 140px;
+            
+        }
+        #eye2{
+             top: 140px;
+            left: 340px;
+            
+        }
+
+        .eye{
+            width: 20px;
+            height: 20px;
+            
+            position: absolute;
+            border-radius: 10px;
+            background-color: blue;
+        }
+
+        .nose{
+            width: 20px;
+            height: 20px;
+            background: black;
+            position: absolute;
+            top: 240px;
+            left: 240px;
+            border-radius: 10px;
+        }
+
+        .mouth {
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid red;
+    border-top: 0;
+    position: absolute;
+    bottom: 100px;
+    left: 140px;
+    transition: 500ms ease all;
+    }
+
+    .mouth:hover{
+        transform: rotate(180deg);
+        transition: 500ms ease all;
+    }
+
+        .face:hover{
+            cursor:crosshair;
+        }
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div id="eye1" class="eye"></div>
+        <div id="eye2" class="eye"></div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
